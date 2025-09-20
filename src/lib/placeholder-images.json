@@ -1,0 +1,58 @@
+{
+  "placeholderImages": [
+    {
+      "id": "meditation-calm",
+      "description": "A person meditating in a calm, natural environment.",
+      "imageUrl": "https://picsum.photos/seed/meditation1/600/400",
+      "imageHint": "meditation nature"
+    },
+    {
+      "id": "volunteering-community",
+      "description": "A group of people volunteering in their community.",
+      "imageUrl": "https://picsum.photos/seed/volunteer1/600/400",
+      "imageHint": "volunteering community"
+    },
+    {
+      "id": "beach-cleanup",
+      "description": "Volunteers cleaning up a beach.",
+      "imageUrl": "https://picsum.photos/seed/beachcleanup/600/400",
+      "imageHint": "beach cleanup"
+    },
+    {
+      "id": "animal-shelter",
+      "description": "A person playing with a dog at an animal shelter.",
+      "imageUrl": "https://picsum.photos/seed/animalshelter/600/400",
+      "imageHint": "animal shelter"
+    },
+    {
+      "id": "community-garden",
+      "description": "People working together in a community garden.",
+      "imageUrl": "https://picsum.photos/seed/communitygarden/600/400",
+      "imageHint": "community garden"
+    },
+    {
+        "id": "senior-care",
+        "description": "A volunteer talking with an elderly person.",
+        "imageUrl": "https://picsum.photos/seed/seniorcare/600/400",
+        "imageHint": "senior care"
+    },
+    {
+        "id": "charity-run",
+        "description": "People participating in a charity run.",
+        "imageUrl": "https://picsum.photos/seed/charityrun/600/400",
+        "imageHint": "charity run"
+    },
+    {
+        "id": "food-drive",
+        "description": "Volunteers sorting donated food items.",
+        "imageUrl": "https://picsum.photos/seed/fooddrive/600/400",
+        "imageHint": "food drive"
+    },
+    {
+        "id": "park-cleanup",
+        "description": "A group of people cleaning a park.",
+        "imageUrl": "https://picsum.photos/seed/parkcleanup/600/400",
+        "imageHint": "park cleanup"
+    }
+  ]
+}

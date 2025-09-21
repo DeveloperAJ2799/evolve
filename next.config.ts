@@ -1,16 +1,22 @@
-import type {NextConfig} from 'next';
+import { type NextConfig } from 'next/dist/server/config';
+import type { ServerRuntime } from 'next/types';
 
-const nextConfig: NextConfig = {
-  output: 'standalone', // Optimizes for production deployment
-  distDir: '.next',     // Build output directory
+const nextConfig = {
+  output: 'standalone',
+  distDir: '.next',
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false, // Enable TypeScript error checking
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false, // Enable ESLint during builds
   },
   poweredByHeader: false,
   generateBuildId: () => 'build',
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["localhost:3000"]
+    }
+  },
   images: {
     remotePatterns: [
       {

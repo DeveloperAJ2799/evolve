@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useTransition, useEffect, useRef, Suspense } from 'react';
+import React, { useState, useTransition, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { ChangeEvent, FormEvent } from 'react';
 
 import { analyzeJournalSentiment } from '@/ai/flows/analyze-journal-sentiment';
 import { generatePersonalizedAffirmations } from '@/ai/flows/generate-personalized-affirmations';
@@ -225,7 +226,7 @@ function EvolveAppComponent() {
                     sentiment: e.sentiment,
                 }))
             });
-            if (weeklyAnalysisResult?.isBadWeek) {
+            if (weeklyAnalysisResult?.needsSupport) {
                 toast({
                     variant: 'destructive',
                     title: "We've Notified Your Friends",
@@ -481,5 +482,3 @@ export function EvolveApp() {
         </Suspense>
     )
 }
-
-    

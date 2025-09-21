@@ -24,7 +24,7 @@ export async function generateMeditationAudio(
   try {
     // Try to use the AI flow first
     const { generateMeditationAudio: aiFlow } = await import('./generate-meditation-audio');
-    return await aiFlow(input);
+    return await aiFlow(input.meditationContent);
   } catch (error: any) {
     console.warn('AI audio generation failed, using fallback:', error.message);
 
@@ -35,4 +35,5 @@ export async function generateMeditationAudio(
     return {
       audioDataUri: fallbackAudioDataUri
     };
+  }
 }

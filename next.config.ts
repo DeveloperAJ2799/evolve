@@ -1,7 +1,8 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone', // Optimizes for production deployment
+  distDir: '.next',     // Build output directory
   typescript: {
     ignoreBuildErrors: true,
   },

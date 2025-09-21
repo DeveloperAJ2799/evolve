@@ -3,11 +3,11 @@
 import { useState, useTransition, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-import { analyzeJournalSentiment } from '@/ai/flows/analyze-journal-sentiment-safe';
-import { generatePersonalizedAffirmations } from '@/ai/flows/generate-personalized-affirmations-safe';
-import { recommendMeditationBasedOnSentiment } from '@/ai/flows/recommend-meditations-based-on-sentiment-safe';
-import { generateMeditationAudio } from '@/ai/flows/generate-meditation-audio-safe';
-import { suggestSocialService } from '@/ai/flows/suggest-social-service-safe';
+import { analyzeJournalSentiment } from '@/ai/flows/analyze-journal-sentiment';
+import { generatePersonalizedAffirmations } from '@/ai/flows/generate-personalized-affirmations';
+import { recommendMeditationBasedOnSentiment } from '@/ai/flows/recommend-meditations-based-on-sentiment';
+import { generateMeditationAudio } from '@/ai/flows/generate-meditation-audio';
+import { suggestSocialService } from '@/ai/flows/suggest-social-service';
 import { analyzeWeeklySentiment } from '@/ai/flows/analyze-weekly-sentiment-safe';
 
 import type { Goal, JournalEntry, Friend } from '@/lib/types';
